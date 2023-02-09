@@ -1,11 +1,5 @@
 import collections
 
-def crossing_product(data, crossing):
-    result = data[crossing[0]]
-    for feature in crossing[1:]:
-        result *= data[feature]
-    return result
-
 def remove_duplicates(crossings_list):
     uniq_crossings = []
     for crossing in crossings_list:
