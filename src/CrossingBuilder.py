@@ -1,5 +1,10 @@
 import collections
 
+def crossing_product(data, crossing):
+    result = data[crossing[0]]
+    for feature in crossing[1:]:
+        result *= data[feature]
+    return result
 
 def remove_duplicates(crossings_list):
     uniq_crossings = []
@@ -20,6 +25,8 @@ def _get_crossing_name(crossing):
     crossing_name = '_X_'.join(crossing)
     return crossing_name
 
-def build_crossings(data, crossing, cross_function):
-    cross_name = _get_crossing_name(crossing)
-    data[cross_name] = cross_function(data, crossing)
+def build_crossings(data, crossings, cross_function):
+    for crossing in crossings:
+        cross_name = _get_crossing_name(crossing)
+        data[cross_name] = cross_function(data, crossing)
+    return data
