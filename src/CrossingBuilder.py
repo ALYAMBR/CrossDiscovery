@@ -7,11 +7,11 @@ def remove_duplicates(crossings_list):
             uniq_crossings.append(crossing)
     return uniq_crossings
     
-def build_crossings_ptototypes(data, depth):
+def build_crossings_prototypes(data, depth):
     columns = data.columns
     crossings = [[col] for col in columns]
     for _ in range(depth):
-        crossings = [sorted(old_cross + [column]) for old_cross in crossings for column in columns]
+        crossings = remove_duplicates([sorted(old_cross + [column]) for old_cross in crossings for column in columns])
     prototypes = remove_duplicates(crossings)
     return prototypes
 
