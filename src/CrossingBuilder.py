@@ -20,7 +20,8 @@ def _get_crossing_name(crossing):
     return crossing_name
 
 def build_crossings(data, crossings, cross_function):
+    res_df = data.copy()
     for crossing in crossings:
         cross_name = _get_crossing_name(crossing)
-        data[cross_name] = cross_function(data, crossing)
-    return data
+        res_df[cross_name] = cross_function(res_df, crossing)
+    return res_df
