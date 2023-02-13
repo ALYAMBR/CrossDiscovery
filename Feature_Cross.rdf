@@ -1,0 +1,494 @@
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:z="http://www.zotero.org/namespaces/export#"
+ xmlns:dcterms="http://purl.org/dc/terms/"
+ xmlns:bib="http://purl.org/net/biblio#"
+ xmlns:foaf="http://xmlns.com/foaf/0.1/"
+ xmlns:link="http://purl.org/rss/1.0/modules/link/"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:prism="http://prismstandard.org/namespaces/1.2/basic/"
+ xmlns:vcard="http://nwalsh.com/rdf/vCard#">
+    <bib:Article rdf:about="#item_461">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1941-0506"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Perin</foaf:surname>
+                        <foaf:givenName>Charles</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Dragicevic</foaf:surname>
+                        <foaf:givenName>Pierre</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Fekete</foaf:surname>
+                        <foaf:givenName>Jean-Daniel</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_463"/>
+        <link:link rdf:resource="#item_462"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Data visualization</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Bertin</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Crossets</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Crossing</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Encoding</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Interaction</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Tabular Data</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Tabular measurements</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Visual analytics</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Visualization</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Revisiting Bertin Matrices: New Interactions for Crafting Tabular Visualizations</dc:title>
+        <dcterms:abstract>We present Bertifier, a web app for rapidly creating tabular visualizations from spreadsheets. Bertifier draws from Jacques Bertin's matrix analysis method, whose goal was to “simplify without destroying” by encoding cell values visually and grouping similar rows and columns. Although there were several attempts to bring this method to computers, no implementation exists today that is both exhaustive and accessible to a large audience. Bertifier remains faithful to Bertin's method while leveraging the power of today's interactive computers. Tables are formatted and manipulated through crossets, a new interaction technique for rapidly applying operations on rows and columns. We also introduce visual reordering, a semi-interactive reordering approach that lets users apply and tune automatic reordering algorithms in a WYSIWYG manner. Sessions with eight users from different backgrounds suggest that Bertifier has the potential to bring Bertin's method to a wider audience of both technical and non-technical users, and empower them with data analysis and communication tools that were so far only accessible to a handful of specialists.COMPUTER</dcterms:abstract>
+        <dc:date>2014-12</dc:date>
+        <z:shortTitle>Revisiting Bertin Matrices</z:shortTitle>
+        <z:libraryCatalog>IEEE Xplore</z:libraryCatalog>
+        <dc:description>Conference Name: IEEE Transactions on Visualization and Computer Graphics</dc:description>
+        <bib:pages>2082-2091</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1941-0506">
+        <prism:volume>20</prism:volume>
+        <dc:title>IEEE Transactions on Visualization and Computer Graphics</dc:title>
+        <dc:identifier>DOI 10.1109/TVCG.2014.2346279</dc:identifier>
+        <prism:number>12</prism:number>
+        <dc:identifier>ISSN 1941-0506</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_463">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>IEEE Xplore Abstract Record</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://ieeexplore.ieee.org/abstract/document/6875988/metrics#metrics</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-01-30 05:39:47</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_462">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>IEEE Xplore Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&amp;arnumber=6875988&amp;ref=</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-01-30 05:39:37</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://ojs.aaai.org/index.php/AAAI/article/view/16561">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:2374-3468"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Su</foaf:surname>
+                        <foaf:givenName>Yixin</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Zhang</foaf:surname>
+                        <foaf:givenName>Rui</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Erfani</foaf:surname>
+                        <foaf:givenName>Sarah</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Xu</foaf:surname>
+                        <foaf:givenName>Zhenghua</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_465"/>
+        <dc:subject>
+            <z:AutomaticTag>
+                <rdf:value>Recommender Systems &amp; Collaborative Filtering</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Detecting Beneficial Feature Interactions for Recommender Systems</dc:title>
+        <dcterms:abstract>Feature interactions are essential for achieving high accuracy in recommender systems. Many studies take into account the interaction between every pair of features. However, this is suboptimal because some feature interactions may not be that relevant to the recommendation result and taking them into account may introduce noise and decrease recommendation accuracy. To make the best out of feature interactions, we propose a graph neural network approach to effectively model them, together with a novel technique to automatically detect those feature interactions that are beneficial in terms of recommendation accuracy. The automatic feature interaction detection is achieved via edge prediction with an L0 activation regularization. Our proposed model is proved to be effective through the information bottleneck principle and statistical interaction theory. Experimental results show that our model (i) outperforms existing baselines in terms of accuracy, and (ii) automatically identifies beneficial feature interactions.</dcterms:abstract>
+        <dc:date>2021-05-18</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>ojs.aaai.org</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://ojs.aaai.org/index.php/AAAI/article/view/16561</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-01-30 10:09:18</dcterms:dateSubmitted>
+        <dc:rights>Copyright (c) 2021 Association for the Advancement of Artificial Intelligence</dc:rights>
+        <dc:description>Number: 5</dc:description>
+        <bib:pages>4357-4365</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:2374-3468">
+        <prism:volume>35</prism:volume>
+        <dc:title>Proceedings of the AAAI Conference on Artificial Intelligence</dc:title>
+        <dc:identifier>DOI 10.1609/aaai.v35i5.16561</dc:identifier>
+        <prism:number>5</prism:number>
+        <dc:identifier>ISSN 2374-3468</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_465">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://ojs.aaai.org/index.php/AAAI/article/download/16561/16368</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-01-30 10:09:20</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:BookSection rdf:about="urn:isbn:978-0-387-30164-8">
+        <z:itemType>bookSection</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Book>
+                <dc:identifier>ISBN 978-0-387-30164-8</dc:identifier>
+                <dc:title>Encyclopedia of Machine Learning</dc:title>
+            </bib:Book>
+        </dcterms:isPartOf>
+        <dc:publisher>
+            <foaf:Organization>
+                <vcard:adr>
+                    <vcard:Address>
+                       <vcard:locality>Boston, MA</vcard:locality>
+                    </vcard:Address>
+                </vcard:adr>
+                <foaf:name>Springer US</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sammut</foaf:surname>
+                        <foaf:givenName>Claude</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <bib:editors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sammut</foaf:surname>
+                        <foaf:givenName>Claude</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Webb</foaf:surname>
+                        <foaf:givenName>Geoffrey I.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:editors>
+        <dc:title>Greedy Search</dc:title>
+        <dc:date>2010</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>Springer Link</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://doi.org/10.1007/978-0-387-30164-8_353</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-02-13 09:05:25</dcterms:dateSubmitted>
+        <dc:description>DOI: 10.1007/978-0-387-30164-8_353</dc:description>
+        <bib:pages>482-483</bib:pages>
+    </bib:BookSection>
+    <bib:Document rdf:about="https://www.semanticscholar.org/topic/Beam-search/215017">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <dc:title>Beam search | Semantic Scholar</dc:title>
+        <dcterms:abstract>In computer science, beam search is a heuristic search algorithm that explores a graph by expanding the most promising node in a limited set. Beam search is an optimization of best-first search that reduces its memory requirements. Best-first search is a graph search which orders all partial solutions (states) according to some heuristic which attempts to predict how close a partial solution is to a complete solution (goal state). But in beam search, only a predetermined number of best partial solutions are kept as candidates.</dcterms:abstract>
+        <z:language>en</z:language>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.semanticscholar.org/topic/Beam-search/215017</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-02-13 09:06:00</dcterms:dateSubmitted>
+    </bib:Document>
+    <bib:BookSection rdf:about="urn:isbn:978-0-470-40053-1">
+        <z:itemType>bookSection</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Book>
+                <dc:identifier>ISBN 978-0-470-40053-1</dc:identifier>
+                <dc:title>Wiley Encyclopedia of Operations Research and Management Science</dc:title>
+            </bib:Book>
+        </dcterms:isPartOf>
+        <dc:publisher>
+            <foaf:Organization>
+               <foaf:name>John Wiley &amp; Sons, Ltd</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Zabinsky</foaf:surname>
+                        <foaf:givenName>Zelda B.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_482"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>global optimization</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>multiple-point generators</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>multistart algorithm</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>random search algorithm</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>single-point generators</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Random Search Algorithms</dc:title>
+        <dcterms:abstract>Random search algorithms are useful for many ill-structured global optimization problems with continuous and/or discrete variables. Typically random search algorithms sacrifice a guarantee of optimality for finding a good solution quickly with convergence results in probability. Random search algorithms include simulated annealing, tabu search, genetic algorithms, evolutionary programming, particle swarm optimization, ant colony optimization, cross-entropy, stochastic approximation, multistart and clustering algorithms, to name a few. They may be categorized as global (exploration) versus local (exploitation) search, or instance-based versus model-based. However, one feature these methods share is the use of a random element embedded in their iterative procedures. This article provides an overview of random search algorithms used to solve black-box global optimization problems.</dcterms:abstract>
+        <dc:date>2011</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>Wiley Online Library</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://onlinelibrary.wiley.com/doi/abs/10.1002/9780470400531.eorms0704</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-02-13 09:10:39</dcterms:dateSubmitted>
+        <dc:description>_eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1002/9780470400531.eorms0704
+DOI: 10.1002/9780470400531.eorms0704</dc:description>
+    </bib:BookSection>
+    <z:Attachment rdf:about="#item_482">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Snapshot</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://onlinelibrary.wiley.com/doi/abs/10.1002/9780470400531.eorms0704</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-02-13 09:10:46</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="#item_485">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:0002-9149"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Detrano</foaf:surname>
+                        <foaf:givenName>R.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Janosi</foaf:surname>
+                        <foaf:givenName>A.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Steinbrunn</foaf:surname>
+                        <foaf:givenName>W.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Pfisterer</foaf:surname>
+                        <foaf:givenName>M.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Schmid</foaf:surname>
+                        <foaf:givenName>J. J.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sandhu</foaf:surname>
+                        <foaf:givenName>S.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Guppy</foaf:surname>
+                        <foaf:givenName>K. H.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Lee</foaf:surname>
+                        <foaf:givenName>S.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Froelicher</foaf:surname>
+                        <foaf:givenName>V.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_486"/>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Algorithms</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Angiography</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Bayes Theorem</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>California</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Coronary Angiography</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Coronary Disease</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Female</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Humans</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Hungary</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Male</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Middle Aged</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Ohio</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Probability</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Switzerland</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>International application of a new probability algorithm for the diagnosis of coronary artery disease</dc:title>
+        <dcterms:abstract>A new discriminant function model for estimating probabilities of angiographic coronary disease was tested for reliability and clinical utility in 3 patient test groups. This model, derived from the clinical and noninvasive test results of 303 patients undergoing angiography at the Cleveland Clinic in Cleveland, Ohio, was applied to a group of 425 patients undergoing angiography at the Hungarian Institute of Cardiology in Budapest, Hungary (disease prevalence 38%); 200 patients undergoing angiography at the Veterans Administration Medical Center in Long Beach, California (disease prevalence 75%); and 143 such patients from the University Hospitals in Zurich and Basel, Switzerland (disease prevalence 84%). The probabilities that resulted from the application of the Cleveland algorithm were compared with those derived by applying a Bayesian algorithm derived from published medical studies called CADENZA to the same 3 patient test groups. Both algorithms overpredicted the probability of disease at the Hungarian and American centers. Overprediction was more pronounced with the use of CADENZA (average overestimation 16 vs 10% and 11 vs 5%, p less than 0.001). In the Swiss group, the discriminant function underestimated (by 7%) and CADENZA slightly overestimated (by 2%) disease probability. Clinical utility, assessed as the percentage of patients correctly classified, was modestly superior for the new discriminant function as compared with CADENZA in the Hungarian group and similar in the American and Swiss groups. It was concluded that coronary disease probabilities derived from discriminant functions are reliable and clinically useful when applied to patients with chest pain syndromes and intermediate disease prevalence.</dcterms:abstract>
+        <dc:date>1989-08-01</dc:date>
+        <z:language>eng</z:language>
+        <z:libraryCatalog>PubMed</z:libraryCatalog>
+        <dc:description>PMID: 2756873</dc:description>
+        <bib:pages>304-310</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:0002-9149">
+        <prism:volume>64</prism:volume>
+        <dc:title>The American Journal of Cardiology</dc:title>
+        <dc:identifier>DOI 10.1016/0002-9149(89)90524-9</dc:identifier>
+        <prism:number>5</prism:number>
+        <dcterms:alternative>Am J Cardiol</dcterms:alternative>
+        <dc:identifier>ISSN 0002-9149</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_486">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>PubMed entry</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://www.ncbi.nlm.nih.gov/pubmed/2756873</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-02-13 09:38:03</dcterms:dateSubmitted>
+        <z:linkMode>3</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Document rdf:about="https://developers.google.com/machine-learning/crash-course/feature-crosses/video-lecture">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website><dc:title>Google Developers</dc:title></z:Website>
+        </dcterms:isPartOf>
+        <dc:title>Feature Crosses | Machine Learning</dc:title>
+        <z:language>en</z:language>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://developers.google.com/machine-learning/crash-course/feature-crosses/video-lecture</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-02-13 09:39:06</dcterms:dateSubmitted>
+    </bib:Document>
+    <bib:Document rdf:about="https://ieeexplore.ieee.org/document/9885186">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <dc:title>A Comprehensive Survey on the Process, Methods, Evaluation, and Challenges of Feature Selection | IEEE Journals &amp; Magazine | IEEE Xplore</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://ieeexplore.ieee.org/document/9885186</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-02-13 09:41:07</dcterms:dateSubmitted>
+    </bib:Document>
+</rdf:RDF>
