@@ -1,4 +1,5 @@
 import collections
+from rankings import ranking_max
 
 def remove_duplicates(crossings_list):
     uniq_crossings = []
@@ -19,9 +20,11 @@ def _get_crossing_name(crossing):
     crossing_name = '_X_'.join(crossing)
     return crossing_name
 
-def build_crossings(data, crossings, cross_function):
+def build_crossings(data, crossings, cross_function, orig_imp):
     res_df = data.copy()
+    cross_info = dict()
     for crossing in crossings:
         cross_name = _get_crossing_name(crossing)
         res_df[cross_name] = cross_function(res_df, crossing)
-    return res_df
+        cross_info.update({cross_name:ranking_max(orig_imp[crossing])})
+    return res_df, cross_info
