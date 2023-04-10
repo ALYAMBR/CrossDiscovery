@@ -26,5 +26,5 @@ def build_crossings(data, crossings, cross_function, orig_imp):
     for crossing in crossings:
         cross_name = _get_crossing_name(crossing)
         res_df[cross_name] = cross_function(res_df, crossing)
-        cross_info.update({cross_name:ranking_max(orig_imp[crossing])})
+        cross_info.update({cross_name:(ranking_max(orig_imp[crossing]), crossing)})
     return res_df, cross_info
