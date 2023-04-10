@@ -25,5 +25,5 @@ datasets = {
     # 'smoke_detection_iot': 'Fire Alarm',
     # 'smoking': 'smoking',
     # 'Mihalikdata': 'SCI',
-    'startup data': 'status',
+    # 'startup data': 'status',
 }
