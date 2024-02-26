@@ -4,6 +4,10 @@ sklearn
 scikit-learn
 seaborn
 matplotlib
+panel
 plotly
+pyviz-comms
 scipy
 lux
+jupyter_bokeh
+hvplot
