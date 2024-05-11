@@ -5,6 +5,10 @@ Compilation of all components together.
 import pandas as pd
 import panel as pn
 import param
+import plotly.graph_objs as go
+from plotly import subplots
+
+pn.extension('plotly')
 
 
 class ProcessStorage():
@@ -24,10 +28,20 @@ class MainFrame():
             )
         
         pn_col_feature_selection = self._init_feature_selection()
+        pn_col_settings = self._init_fe_iteration_settings()
+        pn_col_visualizations = self._init_build_base_visualizations()
+        pn_col_export = self._init_save_page()
+        pn_col_history = self._init_history_page()
 
-        tmplt.main.append(
-            pn_col_feature_selection
-        )
+        pn_cols = [
+            pn_col_feature_selection,
+            pn_col_settings,
+            pn_col_visualizations,
+            pn_col_export,
+            pn_col_history,
+        ]
+
+        [tmplt.main.append(pn_col) for pn_col in pn_cols]
 
         return tmplt
     
@@ -77,8 +91,103 @@ class MainFrame():
             )
     
         return pn_col
+
+    def _init_build_base_visualizations(self):
+        # todo для всех числовых построить распределения
+        # todo для всех категориальных каунтплоты
+        int_subdf = self.data_X.select_dtypes('int')
+        cat_df = pd.DataFrame((int_subdf.nunique() < 20), columns=['is_categorical'])
+        cat_cols = cat_df[cat_df['is_categorical']].index.tolist()
+        int_cols = cat_df[~cat_df['is_categorical']].index.tolist()
+        float_cols = self.data_X.select_dtypes('float').columns.tolist()
+        obj_cols = self.data_X.select_dtypes('object').columns.tolist()
+        
+        total_len = (
+            len(cat_cols) +
+            len(int_cols) +
+            len(float_cols) +
+            len(obj_cols)
+        )
+
+        cat_plots = {}
+        for cat_col in cat_cols:
+            cat_plot = go.Histogram(x=self.data_X[cat_col])
+            cat_plots.update({cat_col: cat_plot})
+
+        int_plots = {}
+        for int_col in int_cols:
+            int_plot = go.Histogram(x=self.data_X[int_col])
+            int_plots.update({int_col: int_plot})
+        
+        float_plots = {}
+        for float_col in float_cols:
+            float_plot = go.Histogram(x=self.data_X[float_col])
+            float_plots.update({float_col: float_plot})
+
+        obj_plots = {}
+        for obj_col in obj_cols:
+            obj_plot = go.Histogram(x=self.data_X[obj_col])
+            obj_plots.update({obj_col: obj_plot})
+
+        plots = {}
+        plots.update(cat_plots)
+        plots.update(int_plots)
+        plots.update(float_plots)
+        plots.update(obj_plots)
+
+        fig_layout = subplots.make_subplots(
+            rows = total_len // 4 + 1, cols = 4,
+            subplot_titles=list(plots.keys()),
+            vertical_spacing=0.03,
+            horizontal_spacing=0.03
+        )
+
+        row, col = 1, 1
+        for k, v in plots.items():
+            fig_layout.append_trace(v, row, col)
+            col += 1
+            if col == 5:
+                row += 1
+                col = 1
+
+        fig_layout['layout'].update(height=1600, width=1600, title='Original Data Distributions')
+
+        pn_col = pn.Column(
+            pn.pane.Plotly(fig_layout),
+            name='Visualizations'
+        )
+        return pn_col
+
+    def _init_fe_iteration_settings(self):
+        # todo настройки для конкретной итерации алгоритма
+        # выбор операций, какие-то базовые настройки
+        # можно продвинутые настройки спрятать под кат
+        pn_col = pn.Column(
+            name='Settings'
+        )
+
+        return pn_col
+
+    def _init_history_page(self):
+        # todo страничка с снэпшотами предыдущих итераций
+        # в идеале интересно было бы сделать дерево, где можно
+        # возвращаться на предыдущие шаги и начинать от какого-то
+        # конкретного состояния
+        pn_col = pn.Column(
+            name='History'
+        )
+
+        return pn_col
+
+    def _init_save_page(self):
+        # todo страничка, на которой можно сохранить артефакты
+        # графики можно и так сохранять
+        pn_col = pn.Column(
+            name='Export'
+        )
+
+        return pn_col
     
-    # def _init_
 
     def show(self):
         self.tmplt.show()
